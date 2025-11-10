@@ -867,3 +867,26 @@
     background: var(--bs-primary) !important;
 }
 /*** copyright end ***/
+
+
+ .brand-logo,
+  .partner-logo {
+    width: 5%;   /* desktop size */
+    height: auto;
+  }
+
+  /* Medium screens (md) */
+  @media (max-width: 991.98px) {
+    .brand-logo,
+    .partner-logo {
+      width: 10%;   /* tablet size */
+    }
+  }
+
+  /* Mobile screens (sm) */
+  @media (max-width: 767.98px) {
+    .brand-logo,
+    .partner-logo {
+      width: 20%;   /* mobile size */
+    }
+  }
