@@ -82,87 +82,41 @@
             height: 200px;
         }
 
-        .ceo-image-wrapper {
-            overflow: hidden;
-        }
+       .ceo-image-wrapper {
+  overflow: hidden;
+}
 
-        .ceo-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.ceo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-        /* lg and up: image fills div and crops neatly */
-        @media (min-width: 992px) {
-            .ceo-image {
-                height: 100%;
-                object-fit: cover;
-            }
+/* lg and up: image fills div and crops neatly */
+@media (min-width: 992px) {
+  .ceo-image {
+    height: 100%;
+    object-fit: cover;
+  }
 
-            .ceo-image-wrapper,
-            .hero-message-card {
-                height: 100%;
-            }
-        }
+  .ceo-image-wrapper,
+  .hero-message-card {
+    height: 100%;
+  }
+}
 
-        /* Below 1200px (including 1024): let text grow with content */
-        @media (max-width: 1199.98px) {
-            .hero-message-overlay {
-                position: static !important;
-                height: auto !important;
-                overflow: visible !important;
-            }
+/* Below 1200px (including 1024): let text grow with content */
+@media (max-width: 1199.98px) {
+  .hero-message-overlay {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
 
-            .hero-message-card {
-                position: static !important;
-            }
-        }
-
-        .products-mini-item {
-            min-height: 150px;
-            /* adjust as you like */
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Top part (image + text) stretches */
-        .products-mini-item .row {
-            flex: 1;
-        }
-
-        /* Fixed area for the logo on the left */
-        .products-mini-img {
-            height: 80px;
-            /* fixed logo area height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px;
-            /* optional, for spacing */
-        }
-
-        /* Make logo fit INSIDE that area */
-        .products-mini-img img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            /* keeps aspect ratio, no crop */
-            display: block;
-            /* width: auto;
-    height: auto; */
-        }
-
-        /* Optional: make footer stick to the bottom */
-        .products-mini-add {
-            margin-top: auto;
-        }
-
-        /* Optional: tweak height for mobile */
-        @media (max-width: 767.98px) {
-            .products-mini-img {
-                height: 60px;
-            }
-        }
+  .hero-message-card {
+    position: static !important;
+  }
+}
     </style>
 
 </head>
@@ -1628,43 +1582,41 @@
 
     <!-- Product Banner Start -->
     <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-4 align-items-stretch">
-
-                <!-- Left: Image -->
-                <div class="col-lg-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="bg-primary rounded h-100 ceo-image-wrapper overflow-hidden">
-                        <img src="https://malithdesilva.github.io/trax/img/mohsen.jpeg"
-                            class="img-fluid w-100 rounded ceo-image" alt="Mohsen Safieddin">
-                    </div>
-                </div>
-
-                <!-- Right: Message -->
-                <div class="col-lg-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="text-center bg-primary rounded position-relative h-100 hero-message-card">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4 hero-message-overlay"
-                            style="color: white;">
-                            <h4 class="display-5 text-white mb-4">Mohsen Safieddin</h4>
-                            <p class="fs-4 text-white" style="text-align: center;">
-                                Mohsen is the Managing Director of Trax Distribution, a family-run tobacco wholesale
-                                business. With over 30 years of experience in the industry, Mohsen has grown the
-                                business
-                                from a single retail store in Adelaide to a nationwide distribution network, while also
-                                managing various retail and wholesale outlets within Australia.
-                                <br><br>
-                                Mohsen is known for his growth mindset, extensive knowledge of the tobacco industry, and
-                                his longstanding relationships. He prides himself on combining his experience with a
-                                forward-thinking approach, constantly adapting to the fast-changing regulatory
-                                environment
-                                to ensure continuous value for customers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      
+      <!-- Left: Image -->
+      <div class="col-lg-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.1s">
+        <div class="bg-primary rounded h-100 ceo-image-wrapper overflow-hidden">
+          <img src="https://malithdesilva.github.io/trax/img/mohsen.jpeg"
+               class="img-fluid w-100 rounded ceo-image"
+               alt="Mohsen Safieddin">
         </div>
+      </div>
+
+      <!-- Right: Message -->
+      <div class="col-lg-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+        <div class="text-center bg-primary rounded position-relative h-100 hero-message-card">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4 hero-message-overlay" style="color: white;">
+            <h4 class="display-5 text-white mb-4">Mohsen Safieddin</h4>
+            <p class="fs-4 text-white" style="text-align: center;">
+              Mohsen is the Managing Director of Trax Distribution, a family-run tobacco wholesale
+              business. With over 30 years of experience in the industry, Mohsen has grown the business
+              from a single retail store in Adelaide to a nationwide distribution network, while also
+              managing various retail and wholesale outlets within Australia.
+              <br><br>
+              Mohsen is known for his growth mindset, extensive knowledge of the tobacco industry, and
+              his longstanding relationships. He prides himself on combining his experience with a
+              forward-thinking approach, constantly adapting to the fast-changing regulatory environment
+              to ensure continuous value for customers.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</div>
 
     <!-- Product Banner End -->
 
@@ -1680,174 +1632,10 @@
                 <div class="productImg-carousel owl-carousel productList-item">
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/METRO.png" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/LOWES.png" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/alpa.webp" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="productImg-carousel owl-carousel productList-item">
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png" class="img-fluid  "
-                                        alt="Image">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp" class="img-fluid  "
-                                        alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2"></a>
-                                    <a href="#" class="d-block h4">Endeavour</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp" class="img-fluid  "
-                                        alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2"></a>
-                                    <a href="#" class="d-block h4">SOLO</a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png" class="img-fluid  "
-                                        alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2"></a>
-                                    <a href="#" class="d-block h4">Liberty</a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="productImg-carousel owl-carousel productList-item">
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1857,20 +1645,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">United</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1880,20 +1679,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">Endeavour</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1903,20 +1713,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">SOLO</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1926,12 +1747,23 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">Liberty</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1939,9 +1771,9 @@
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1951,20 +1783,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">United</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1974,20 +1817,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">Endeavour</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1997,20 +1851,31 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">SOLO</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="productImg-item products-mini-item border">
                         <div class="row g-0">
                             <div class="col-5">
-                                <div class="products-mini-img border-end ">
-                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png" class="img-fluid  "
-                                        alt="Image">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2020,12 +1885,299 @@
                                 <div class="products-mini-content p-3">
                                     <a href="#" class="d-block mb-2"></a>
                                     <a href="#" class="d-block h4">Liberty</a>
-
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
                                 </div>
                             </div>
                         </div>
                         <div class="products-mini-add border p-3">
-
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="productImg-carousel owl-carousel productList-item">
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">United</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">Endeavour</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">SOLO</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">Liberty</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="productImg-carousel owl-carousel productList-item">
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/UNITED.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">United</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/ENDVR.svg"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">Endeavour</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/SOLO.webp"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">SOLO</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="https://malithdesilva.github.io/trax/img/LIBERTY.png"
+                                        class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2"></a>
+                                    <a href="#" class="d-block h4">Liberty</a>
+                                    <!-- <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <!-- <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
